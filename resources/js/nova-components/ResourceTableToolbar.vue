@@ -138,12 +138,11 @@
 
 <script>
 import ResourceTableToolbar from "@/components/ResourceTableToolbar";
-import {onMounted} from "vue";
 
 export default {
     extends: ResourceTableToolbar,
 
-    onMounted: () => {
+    mounted() {
         console.log("PROPS RESOURCE TABLE TOOLBAR", props);
     },
 };
