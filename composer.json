@@ -1,5 +1,5 @@
 {
-    "name": "datomatic/nova-detached-actions",
+    "name": "pippan-internet/nova-detached-actions",
     "description": "A Laravel Nova tool to allow for placing actions in the Nova toolbar detached from the checkbox selection mechanism.",
     "keywords": [
         "laravel",
@@ -13,13 +13,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Datomatic\\Nova\\Tools\\DetachedActions\\": "src/"
+            "pippan\\Nova\\Tools\\DetachedActions\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Datomatic\\Nova\\Tools\\DetachedActions\\ToolServiceProvider"
+                "pippan\\Nova\\Tools\\DetachedActions\\ToolServiceProvider"
             ]
         }
     },
