@@ -5,17 +5,26 @@
                     v-if="invisibleActions.length"
                     class="mr-2"
                     :resource-name="resourceName"
+                    :viaRelationship="viaRelationship"
+                    :viaResource="viaResource"
+                    :viaResourceId="viaResourceId"
                     :actions="invisibleActions"
             />
             <ActionButtons
                     v-if="visibleActions.length"
                     :resource-name="resourceName"
+                    :viaRelationship="viaRelationship"
+                    :viaResource="viaResource"
+                    :viaResourceId="viaResourceId"
                     :actions="visibleActions"/>
         </div>
         <div class="flex md:hidden">
             <ActionDropdown
                     class="mr-2"
                     :resource-name="resourceName"
+                    :viaRelationship="viaRelationship"
+                    :viaResource="viaResource"
+                    :viaResourceId="viaResourceId"
                     :actions="allActions"
             />
         </div>
