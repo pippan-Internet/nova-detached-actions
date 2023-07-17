@@ -192,6 +192,11 @@ public function handleRequest(ActionRequest $request): array
 }
 ```
 
+## Building with Docker
+
+- Install Node Dependencies: ```docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app node:latest npm install```
+- Build JS: ```docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app node:latest npm run production```
+- Install PHP Dependencies: ```docker run -it --rm -v "$PWD":/usr/src/app -w /usr/src/app composer:latest composer install```
 
 
 ## License
