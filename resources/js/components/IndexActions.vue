@@ -53,7 +53,7 @@ const allActions = ref([]);
 
 onMounted(() => {
     getActions();
-
+    console.log("PROPS INDEX ACTIONS", props);
 });
 
 const getActions = () => {
