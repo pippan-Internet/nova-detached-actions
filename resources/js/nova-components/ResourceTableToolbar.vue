@@ -143,7 +143,7 @@ export default {
     extends: ResourceTableToolbar,
 
     mounted() {
-        console.log("PROPS RESOURCE TABLE TOOLBAR", props);
+        console.log("PROPS RESOURCE TABLE TOOLBAR", this);
     },
 };
 </script>
