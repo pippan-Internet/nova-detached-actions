@@ -29,7 +29,7 @@
                     :resourceName="resourceName"
                     :viaRelationship="viaRelationship"
                     :viaResource="customViaResource"
-                    :viaResourceId="customViaResourceId"
+                    :viaResourceId="customViaResourceId ? parseInt(customViaResourceId) : null"
                 ></IndexActions>
                 <!-- Action Selector -->
                 <div class="hidden md:flex px-2">
