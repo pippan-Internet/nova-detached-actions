@@ -143,17 +143,14 @@ export default {
     extends: ResourceTableToolbar,
 
     mounted() {
+        let pathname = '';
         let customViaResource = '';
         let customViaResourceId = '';
 
-        console.log(window.location.pathname);
-        console.log(window.location.pathname
-            .match(/^\/nova\/resources\/([^\/]+)\/?([^\/]*).*$/));
+        [pathname, customViaResource, customViaResourceId] = window.location.pathname
+                .match(/^\/nova\/resources\/([^\/]+)\/?([^\/]*).*$/);
 
-        // [customViaResource, customViaResourceId] = window.location.pathname
-        //         .match(/^\/resources\/([^\/]+)\/([^\/]+).*$/);
-        //
-        // console.log("PROPS RESOURCE TABLE TOOLBAR", customViaResource, customViaResourceId);
+        console.log("PROPS RESOURCE TABLE TOOLBAR", pathname, customViaResource, customViaResourceId);
     },
 };
 </script>
