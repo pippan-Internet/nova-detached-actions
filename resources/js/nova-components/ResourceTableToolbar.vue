@@ -148,7 +148,7 @@ export default {
 
         console.log(window.location.pathname);
         console.log(window.location.pathname
-            .match(/^\/resources\/([^\/]+)\/([^\/]+).*$/));
+            .match(/^\/nova\/resources\/([^\/]+)\/?([^\/]*).*$/));
 
         // [customViaResource, customViaResourceId] = window.location.pathname
         //         .match(/^\/resources\/([^\/]+)\/([^\/]+).*$/);
