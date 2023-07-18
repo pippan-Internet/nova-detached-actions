@@ -146,10 +146,14 @@ export default {
         let customViaResource = '';
         let customViaResourceId = '';
 
-        [customViaResource, customViaResourceId] = window.location.pathname
-                .match(/^\/resources\/([^\/]+)\/([^\/]+).*$/);
+        console.log(window.location.pathname);
+        console.log(window.location.pathname
+            .match(/^\/resources\/([^\/]+)\/([^\/]+).*$/));
 
-        console.log("PROPS RESOURCE TABLE TOOLBAR", customViaResource, customViaResourceId);
+        // [customViaResource, customViaResourceId] = window.location.pathname
+        //         .match(/^\/resources\/([^\/]+)\/([^\/]+).*$/);
+        //
+        // console.log("PROPS RESOURCE TABLE TOOLBAR", customViaResource, customViaResourceId);
     },
 };
 </script>
