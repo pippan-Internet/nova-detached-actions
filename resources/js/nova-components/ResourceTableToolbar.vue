@@ -28,8 +28,8 @@
                 <IndexActions
                     :resourceName="resourceName"
                     :viaRelationship="viaRelationship"
-                    :viaResource="viaResource"
-                    :viaResourceId="viaResourceId"
+                    :viaResource="customViaResource"
+                    :viaResourceId="customViaResourceId"
                 ></IndexActions>
                 <!-- Action Selector -->
                 <div class="hidden md:flex px-2">
@@ -142,15 +142,21 @@ import ResourceTableToolbar from "@/components/ResourceTableToolbar";
 export default {
     extends: ResourceTableToolbar,
 
+    data: function () {
+        return {
+            pathname: '',
+            customViaResource: '',
+            customViaResourceId: ''
+        };
+    },
+
     mounted() {
-        let pathname = '';
-        let customViaResource = '';
-        let customViaResourceId = '';
-
-        [pathname, customViaResource, customViaResourceId] = window.location.pathname
+        [
+            this.pathname,
+            this.customViaResource,
+            this.customViaResourceId
+        ] = window.location.pathname
                 .match(/^\/nova\/resources\/([^\/]+)\/?([^\/]*).*$/);
-
-        console.log("PROPS RESOURCE TABLE TOOLBAR", pathname, customViaResource, customViaResourceId);
     },
 };
 </script>
