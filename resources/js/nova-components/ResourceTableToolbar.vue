@@ -30,6 +30,7 @@
                     :viaRelationship="viaRelationship"
                     :viaResource="customViaResource"
                     :viaResourceId="customViaResourceId ? parseInt(customViaResourceId) : null"
+                    @actionExecuted="getResources"
                 ></IndexActions>
                 <!-- Action Selector -->
                 <div class="hidden md:flex px-2">
