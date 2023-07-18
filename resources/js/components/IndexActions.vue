@@ -16,7 +16,8 @@
                     :viaRelationship="viaRelationship"
                     :viaResource="viaResource"
                     :viaResourceId="viaResourceId"
-                    :actions="visibleActions"/>
+                    :actions="visibleActions"
+                    @actionExecuted="$emit('actionExecuted')"/>
         </div>
         <div class="flex md:hidden">
             <ActionDropdown
@@ -53,7 +54,6 @@ const allActions = ref([]);
 
 onMounted(() => {
     getActions();
-    console.log("PROPS INDEX ACTIONS", props);
 });
 
 const getActions = () => {
